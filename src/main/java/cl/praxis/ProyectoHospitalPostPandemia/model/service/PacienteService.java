@@ -8,8 +8,8 @@ import java.util.List;
 public interface PacienteService {
     List<Paciente> findAll();
     Paciente findOne(int id);
-    boolean create(Paciente b);
-    boolean update(Paciente b);
+    boolean create(Paciente p);
+    boolean update(Paciente p);
     boolean delete(int id);
 
 }

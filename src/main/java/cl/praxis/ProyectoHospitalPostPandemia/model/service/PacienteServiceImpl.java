@@ -43,32 +43,21 @@ public class PacienteServiceImpl implements PacienteService {
 
     @Override
     public Paciente findOne(int id) {
-        return pacienteList.stream()
-                .filter(paciente -> paciente.getId() == id)
-                .findFirst()
-                .orElse(null);
+        return null;
     }
 
     @Override
-    public boolean create(Paciente b) {
-        pacienteList.add(b);
-        return true;
+    public boolean create(Paciente p) {
+          return true;
     }
 
     @Override
-    public boolean update(Paciente b) {
-             return true;
+    public boolean update(Paciente p) {
+          return true;
     }
 
     @Override
     public boolean delete(int id) {
-
-        Paciente b = findOne(id);
-        if (b != null){
-            pacienteList.remove(b);
-            return true;
-        }
-
         return false;
     }
 
